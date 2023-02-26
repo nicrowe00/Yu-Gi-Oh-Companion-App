@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Yu-Gi-Oh Companion</string>
+    <string name="life_point_value">8000</string>
+    <string name="zero">0</string>
+    <string name="zerozero">00</string>
+    <string name="zerozerozero">000</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="clear">C</string>
+    <string name="reset">Reset</string>
+    <string name="oneplayer">1 Player Duel</string>
+    <string name="twoplayer">2 Player Duel</string>
+    <string name="back_button">back button</string>
+    <string name="action_duelmenu">Duel</string>
+    <string name="player_name">Name</string>
+    <string name="player_wins">Wins</string>
+    <string name="player_matches">Total Matches</string>
+    <string name="duel_links_code">Duel Links Friend Code</string>
+    <string name="master_duel_code">Master Duel Friend Code</string>
+    <string name="add_player">Add Player</string>
+    <string name="delete_player">Delete Player</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_player_details_menu">Player Details</string>
+    <string name="action_players_menu">Players</string>
+    <string name="action_one_player">One Player Duel</string>
+    <string name="action_two_player">Two Player Duel</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/duelFragment">
+
+    <fragment
+        android:id="@+id/duelFragment"
+        android:name="ie.wit.yugiohcompanionapp.fragments.DuelFragment"
+        android:label="@string/action_duelmenu"
+        android:background="@drawable/yugioh_counter"
+        tools:layout="@layout/fragment_duel" >
+        <action
+            android:id="@+id/action_duelFragment_to_playersFragment"
+            app:destination="@id/playersFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_duelFragment_to_duelOnePlayerFragment"
+            app:destination="@id/duelOnePlayerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_duelFragment_to_duelTwoPlayerFragment"
+            app:destination="@id/duelTwoPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="ie.wit.yugiohcompanionapp.fragments.PlayersFragment"
+        android:label="@string/action_players_menu"
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_playersFragment_to_duelFragment"
+            app:destination="@id/duelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duelOnePlayerFragment"
+        android:name="ie.wit.yugiohcompanionapp.fragments.DuelOnePlayerFragment"
+        android:label="@string/action_one_player"
+        tools:layout="@layout/fragment_dueloneplayer" >
+        <action
+            android:id="@+id/action_duelOnePlayerFragment_to_duelFragment"
+            app:destination="@id/duelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duelTwoPlayerFragment"
+        android:name="ie.wit.yugiohcompanionapp.fragments.DuelTwoPlayerFragment"
+        android:label="@string/action_two_player"
+        tools:layout="@layout/fragment_dueltwoplayer" >
+        <action
+            android:id="@+id/action_duelTwoPlayerFragment_to_duelFragment"
+            app:destination="@id/duelFragment" />
+    </fragment>
+</navigation>

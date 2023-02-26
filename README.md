@@ -1,0 +1,5 @@
+# Yu-Gi-Oh-Companion-App
+The Yu-Gi-Oh Companion App is an application desgined to be used when playing the Yu-Gi-Oh trading card game. The application primarily functions as a life point tracker where you can either keep track of your own life points while you play the game or you can keep track of both your and your opponent's life points should it be necessary. You can also add player details to the application as well, such as your name, your current number of wins, your current number of matches, your friend code for the online game Yu-Gi-Oh Duel Links and your friend code for the other online game Yu-Gi-Oh Master Duel. This app features bacnkgrounds, fonts and sound effects from the original Yu-Gi-Oh anime.
+
+# Installation
+In order to install and run this application, simply download the files, open the application files in Android Studio and launch the application on your emulated device. APK's are also available for the application. If you desire an APK, simply contact me and I will send one to you.
