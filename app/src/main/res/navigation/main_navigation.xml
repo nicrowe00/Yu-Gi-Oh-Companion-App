@@ -7,36 +7,38 @@
 
     <fragment
         android:id="@+id/duelFragment"
-        android:name="ie.wit.yugiohcompanionapp.fragments.DuelFragment"
-        android:label="@string/action_duelmenu"
+        android:name="ie.wit.yugiohcompanionapp.ui.duel.DuelFragment"
         android:background="@drawable/yugioh_counter"
-        tools:layout="@layout/fragment_duel" >
-        <action
-            android:id="@+id/action_duelFragment_to_playersFragment"
-            app:destination="@id/playersFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+        android:label="@string/action_duelmenu"
+        tools:layout="@layout/fragment_duel">
         <action
             android:id="@+id/action_duelFragment_to_duelOnePlayerFragment"
-            app:destination="@id/duelOnePlayerFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:destination="@id/duelOnePlayerFragment" />
+        <action
+            android:id="@+id/action_duelFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
         <action
             android:id="@+id/action_duelFragment_to_duelTwoPlayerFragment"
             app:destination="@id/duelTwoPlayerFragment" />
     </fragment>
     <fragment
         android:id="@+id/playersFragment"
-        android:name="ie.wit.yugiohcompanionapp.fragments.PlayersFragment"
+        android:name="ie.wit.yugiohcompanionapp.ui.players.PlayersFragment"
         android:label="@string/action_players_menu"
         tools:layout="@layout/fragment_players" >
         <action
             android:id="@+id/action_playersFragment_to_duelFragment"
             app:destination="@id/duelFragment" />
+        <action
+            android:id="@+id/action_playersFragment_to_playerDetailsFragment"
+            app:destination="@id/playerDetailsFragment" />
+        <action
+            android:id="@+id/action_playersFragment_to_addPlayersFragment"
+            app:destination="@id/addPlayersFragment" />
     </fragment>
     <fragment
         android:id="@+id/duelOnePlayerFragment"
-        android:name="ie.wit.yugiohcompanionapp.fragments.DuelOnePlayerFragment"
+        android:name="ie.wit.yugiohcompanionapp.ui.dueloneplayer.DuelOnePlayerFragment"
         android:label="@string/action_one_player"
         tools:layout="@layout/fragment_dueloneplayer" >
         <action
@@ -45,11 +47,32 @@
     </fragment>
     <fragment
         android:id="@+id/duelTwoPlayerFragment"
-        android:name="ie.wit.yugiohcompanionapp.fragments.DuelTwoPlayerFragment"
+        android:name="ie.wit.yugiohcompanionapp.ui.dueltwoplayer.DuelTwoPlayerFragment"
         android:label="@string/action_two_player"
         tools:layout="@layout/fragment_dueltwoplayer" >
         <action
             android:id="@+id/action_duelTwoPlayerFragment_to_duelFragment"
             app:destination="@id/duelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerDetailsFragment"
+        android:name="ie.wit.yugiohcompanionapp.ui.details.PlayerDetailsFragment"
+        android:label="@string/action_player_details"
+        tools:layout="@layout/fragment_player_details">
+        <action
+            android:id="@+id/action_playerDetailsFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <argument
+            android:name="playerid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlayersFragment"
+        android:name="ie.wit.yugiohcompanionapp.ui.add.AddPlayersFragment"
+        android:label="@string/action_add_players"
+        tools:layout="@layout/fragment_add_players">
+        <action
+            android:id="@+id/action_addPlayersFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
     </fragment>
 </navigation>

@@ -4,18 +4,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/container"
+    android:id="@+id/playersFragment"
     android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
     android:background="@drawable/yugioh_counter"
-    tools:context=".fragments.PlayersFragment">
+    tools:context=".ui.players.PlayersFragment">
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintVertical_bias="1.0"/>
 
+    <TextView
+        android:id="@+id/playersNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/msmincho"
+        android:text="@string/playyers_not_found"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/yugioh_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Players not Found." />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

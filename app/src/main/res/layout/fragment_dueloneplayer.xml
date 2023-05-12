@@ -5,9 +5,10 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
     android:background="@drawable/yugioh_counter"
     android:theme="@style/Theme.YugiohDuelTheme"
-    tools:context=".fragments.DuelOnePlayerFragment">
+    tools:context=".ui.dueloneplayer.DuelOnePlayerFragment">
 
     <TextView
         android:id="@+id/editTextNumber1"
@@ -22,7 +23,7 @@
         android:textAlignment="center"
         android:textColor="@color/yugioh_yellow"
         android:textSize="70sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,10 +45,11 @@
         android:layout_marginTop="16dp"
         android:background="@android:color/darker_gray"
         android:fontFamily="@font/msmincho"
+
         android:text="@string/reset"
         android:textColor="@color/yugioh_yellow"
         android:textSize="30sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
@@ -72,7 +74,7 @@
             android:textAlignment="center"
             android:textColor="@color/yugioh_yellow"
             android:textSize="30sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -94,7 +96,7 @@
             android:text="@string/one"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -116,7 +118,7 @@
             android:text="@string/two"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -138,7 +140,7 @@
             android:text="@string/three"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
     </androidx.cardview.widget.CardView>
 
@@ -161,7 +163,7 @@
             android:text="@string/four"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -183,7 +185,7 @@
             android:text="@string/five"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -205,7 +207,7 @@
             android:text="@string/six"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
     </androidx.cardview.widget.CardView>
 
@@ -228,7 +230,7 @@
             android:text="@string/seven"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -250,7 +252,7 @@
             android:text="@string/eight"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -272,7 +274,7 @@
             android:text="@string/nine"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
     </androidx.cardview.widget.CardView>
 
@@ -295,7 +297,7 @@
             android:text="@string/zero"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -317,7 +319,7 @@
             android:text="@string/zerozero"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -339,7 +341,7 @@
             android:text="@string/zerozerozero"
             android:textColor="@color/yugioh_yellow"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
     </androidx.cardview.widget.CardView>
 
@@ -361,8 +363,8 @@
             android:fontFamily="@font/msmincho"
             android:text="@string/minus"
             android:textColor="@color/yugioh_yellow"
-            android:textSize="25sp"
-            android:textStyle="italic" />
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -383,8 +385,8 @@
             android:fontFamily="@font/msmincho"
             android:text="@string/plus"
             android:textColor="@color/yugioh_yellow"
-            android:textSize="25sp"
-            android:textStyle="italic" />
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -406,7 +408,7 @@
             android:text="@string/clear"
             android:textColor="@color/yugioh_yellow"
             android:textSize="25sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
     </androidx.cardview.widget.CardView>
 

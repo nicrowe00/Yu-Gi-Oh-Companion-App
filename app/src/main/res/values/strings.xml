@@ -17,8 +17,8 @@
     <string name="minus">-</string>
     <string name="clear">C</string>
     <string name="reset">Reset</string>
-    <string name="oneplayer">1 Player Duel</string>
-    <string name="twoplayer">2 Player Duel</string>
+    <string name="oneplayer">1 Player</string>
+    <string name="twoplayer">2 Players</string>
     <string name="back_button">back button</string>
     <string name="action_duelmenu">Duel</string>
     <string name="player_name">Name</string>
@@ -31,6 +31,30 @@
     <string name="cancel">Cancel</string>
     <string name="action_player_details_menu">Player Details</string>
     <string name="action_players_menu">Players</string>
-    <string name="action_one_player">One Player Duel</string>
-    <string name="action_two_player">Two Player Duel</string>
+    <string name="action_one_player">1 Player</string>
+    <string name="action_two_player">2 Players</string>
+    <string name="action_add_players">Add Player</string>
+    <string name="playyers_not_found">No Players Found</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="emailpassword_title_text">Please Login Below</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="messageLoading">Loading Players.....</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="nav_header_title">Yu-Gi-Oh! Companion</string>
+    <string name="nav_header_subtitle">niall@niall.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="error">Failed to Add Player</string>
+    <string name="update_player">Update</string>
+    <string name="action_player_details">Player Details</string>
+    <string name="select_profile_image">Select Profile Image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
